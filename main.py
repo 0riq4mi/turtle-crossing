@@ -27,7 +27,7 @@ while game_is_on:
         if car.distance(player) < 20:
             game_is_on = False
             scoreboard.game_over()
-
+    #Detect collision cross the finish line.
     if player.is_that_finish_line():
         player.go_to_start()
         car_manager.level_up()
